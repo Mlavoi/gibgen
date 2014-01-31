@@ -226,7 +226,7 @@ time_end = time.time()
 
 
 print(new_words)
-print("Execution time: ")
+print("Execution time in sec: ")
 print(time_end - time_beg)
 
 
