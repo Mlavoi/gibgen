@@ -5,6 +5,13 @@
 import random
 import sys
 import time
+<<<<<<< HEAD
+=======
+
+#Variable to hold the time the program starts
+
+time_beg = time.time()
+>>>>>>> feature
 
 #A list to hold the words entered by the user.
 time_beg = time.time()
@@ -227,6 +234,13 @@ time_end = time.time()
 
 print(new_words)
 print("Execution time in sec: ")
+print(time_end - time_beg)
+
+#Variable to hold when program finishes
+
+time_end = time.time()
+
+print("Execution in sec: ")
 print(time_end - time_beg)
 
 
