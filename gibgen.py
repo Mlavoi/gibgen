@@ -4,8 +4,10 @@
 
 import random
 import sys
+import time
 
 #A list to hold the words entered by the user.
+time_beg = time.time()
 
 user_input = sys.argv
 
@@ -13,7 +15,7 @@ user_input = sys.argv
 
 """String object to hold the list objects. I did this to eliminate any quotations used
     in the command line arguments. Otherwise, my program was treating any sentence in
-    quotes as one long word instead of seperate words."""
+    quotes as one long word instead of separate words."""
     
 string = " ".join(user_input)
 
@@ -220,8 +222,12 @@ for item in list[1:]:
 
 new_words = " ".join(gibberish_words)
 
+time_end = time.time()
+
 
 print(new_words)
+print("Execution time: ")
+print(time_end - time_beg)
 
 
 
