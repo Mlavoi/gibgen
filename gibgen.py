@@ -4,6 +4,11 @@
 
 import random
 import sys
+import time
+
+#Variable to hold the time the program starts
+
+time_beg = time.time()
 
 #A list to hold the words entered by the user.
 
@@ -222,6 +227,13 @@ new_words = " ".join(gibberish_words)
 
 
 print(new_words)
+
+#Variable to hold when program finishes
+
+time_end = time.time()
+
+print("Execution in sec: ")
+print(time_end - time_beg)
 
 
 
